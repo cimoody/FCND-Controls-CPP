@@ -37,6 +37,6 @@ maxMotorThrust = 4.5
 kappa = 0.016
 
 # Angle rate gains
-kpPQR = 23, 23, 5
+kpPQR = 92, 92, 25
 
 QuadControlParams.kpBank = 0
