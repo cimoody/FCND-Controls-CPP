@@ -10,7 +10,7 @@
 
 [Quad]
 # mass [kg]
-Mass = .23
+Mass = 0.5
 
 # distance from vehicle origin to motors [m]
 L = 0.17
@@ -35,8 +35,3 @@ maxMotorThrust = 4.5
 # ratio between thrust [N] and torque due to drag [N m]
 # torque = kappa * thrust
 kappa = 0.016
-
-# Angle rate gains
-kpPQR = 92, 92, 22
-
-QuadControlParams.kpBank = 5
