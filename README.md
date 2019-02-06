@@ -45,9 +45,9 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 
 ### Scenario 4 ###
 <p align="center">
-<img src="[animations/Scenario4_Start.gif](http://www.youtube.com/watch?v=TIJI13YTjak) 
+<img src="animations/Scenario4_Start.gif[animations/Scenario4_Start.gif](http://www.youtube.com/watch?v=TIJI13YTjak) 
 " width="300"/>
-<img src="[animations/Scenario4_Finish.gif](http://www.youtube.com/watch?v=Z690Q5rHcL8)
+<img src="animations/Scenario4_Finish.gif[animations/Scenario4_Finish.gif](http://www.youtube.com/watch?v=Z690Q5rHcL8)
 " width="300"/>
 </p/>
 
