@@ -101,7 +101,8 @@ This case would benefit from more precise parameter tuning, but I was happy to g
 
 
 <p align="center">
-<img src="animations/Scenario5_Start.gif" width="500"/>
+<img src="animations/FollowingFormation.gif" width="500"/>
+<p/>
 
 
 ## Authors ##
