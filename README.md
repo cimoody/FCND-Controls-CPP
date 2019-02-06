@@ -45,16 +45,16 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 
 ### Scenario 4 ###
 <p align="center">
-<img src="
-[![Initial Scenario 4](animations/Scenario4_Start.gif)](http://www.youtube.com/watch?v=TIJI13YTjak) 
-[![PID Controlled Scenario 4](animations/Scenario4_Finish.gif)](http://www.youtube.com/watch?v=Z690Q5rHcL8)
-"/>
+<img src="[animations/Scenario4_Start.gif](http://www.youtube.com/watch?v=TIJI13YTjak) 
+" width="300"/>
+<img src="[animations/Scenario4_Finish.gif](http://www.youtube.com/watch?v=Z690Q5rHcL8)
+" width="300"/>
 </p/>
 
 ### Scenario 5 ###
 
 <p align="center">
-<img src= "[![Initial Scenario 5](animations/Scenario5_Start.gif)](http://www.youtube.com/watch?v=MGoWMPEWPmw"")"width="400"/>
+<img src= "[animations/Scenario5_Start.gif](http://www.youtube.com/watch?v=MGoWMPEWPmw"")"width="400"/>
 <img src="[![PID controlled Scenario 5](animations/Scenario5_Finish.gif)](http://www.youtube.com/watch?v=sT3jDKye_wA"")" width="400"/>
 <p/>
 
