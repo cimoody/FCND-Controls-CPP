@@ -10,56 +10,89 @@ The correct code is located in [cimoody/FCND-Controls-CPP/src/QuadControl.cpp](h
 
 To demonstrate the correct implementation of the C++ PID controls, sample videos of the simulator performing the 5 specific tasks ([listed in Cpp_README.md, starting with the mass tuning](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md#testing-it-out)) are included in this write-up.
 
+
+## The Tasks ##
+
 ### The 5 tasks are:
 1. Hovering at correct mass 
+
+<p align="center">
+<img src="animations/scenario1.gif" width="300"/>
+</p>
+
 2. Stopping an initially spinning quadcopter or drone by correctly implementing the functions controlling individual motor thrust and rotational rates in
 	- `GenerateMotorCommands()`
 	- `BodyRateControl()`
 	and tuning the proportional parameter for the rotational velocities
 	- `kpPQR` in 'QuadControlParams.txt'[](https://github.com/cimoody/FCND-Controls-CPP/tree/master/config).
+
+<p align="center">
+<img src="animations/scenario2.gif" width="300"/>
+</p>
+
 3. Controlling the yaw (clockwise/counter-clockwise rotation), altitude, and lateral position controls of two drones by impelementing the propotional derative 
 	- `AltitudeControl()` function,
 	- `LateralPositionControl()` function,
 	- `YawControl()` function,
 	and tuning the related proportional and derivative constants
 	- `kpPosZ`, `kpVelZ`, `kpPosXY`, `kpVelXY`, `kpYaw`, and the third component of `kpPQR`.
+
+<p align="center">
+<img src="animations/scenario3.gif" width="300"/>
+</p>
+
 4. Relax the controller for non-ideal scenarios such as a drone with an offset center of mass (green), or a heavier than usual mass (red) and achieve the same motion for all three drones as the ideal case (orange) by adding in basic integrall control to the `AltitudeControl()` function.
+
+<p align="center">
+<img src="animations/scenario4.gif" width="300"/>
+</p>
+
 5. Finally, testing the performance of two drones in performing periodic motion with different initial conditions.
 
+<p align="center">
+<img src="animations/scenario5.gif" width="300"/>
+</p>
 
-## The Tasks ##
+## The before and after implementation of PID Control functions ##
 
 ### Scenario 1 ###
+<p align="center">
+<img src="animations/Scenario1_Start.gif" alt="[](http://www.youtube.com/watch?v=rbDtG0ntA88)" width="300"/>
+<img src="animations/Scenario1_Finish.gif" alt="[](http://www.youtube.com/watch?v=RwOANE0UdDg)" width="300"/>
+</p/>
 
-
-[start](https://youtu.be/rbDtG0ntA88) [finish](https://youtu.be/RwOANE0UdDg)
+/**[start](https://youtu.be/rbDtG0ntA88) [finish](https://youtu.be/RwOANE0UdDg)**/
 
 ### Scenario 2 ###
+<p align="center">
+<img src="animations/Scenario2_Start.gif" alt="[](http://www.youtube.com/watch?v=OyQ1zFRaxA0)" width="300"/>
+<img src="animations/Scenario2_Finish.gif" alt="[](http://www.youtube.com/watch?v=MLuDJvOlmaE)" width="300"/>
+</p/>
 
-[start](https://youtu.be/OyQ1zFRaxA0) [finish](https://youtu.be/MLuDJvOlmaE)
+/**[start](https://youtu.be/OyQ1zFRaxA0) [finish](https://youtu.be/MLuDJvOlmaE)**/
 
 ### Scenario 3 ###
-
-[start](https://youtu.be/jszk5gQG9bA) [finish](https://youtu.be/7OZu-66MHqk)
-
+<p align="center">
+<img src="animations/Scenario3_Start.gif" alt="[](http://www.youtube.com/watch?v=jszk5gQG9bA)" width="300"/>
+<img src="animations/Scenario3_Finish.gif" alt="[](http://www.youtube.com/watch?v=7OZu-66MHqk)" width="300"/>
+</p/>
 
 ### Scenario 4 ###
 <p align="center">
-<img src="animations/Scenario4_Start.gif", alt="[](http://www.youtube.com/watch?v=TIJI13YTjak)" width="300"/>
-<img src="animations/Scenario4_Finish.gif", alt="[](http://www.youtube.com/watch?v=Z690Q5rHcL8)" width="300"/>
+<img src="animations/Scenario4_Start.gif" alt="[](http://www.youtube.com/watch?v=TIJI13YTjak)" width="300"/>
+<img src="animations/Scenario4_Finish.gif" alt="[](http://www.youtube.com/watch?v=Z690Q5rHcL8)" width="300"/>
 </p/>
 
 ### Scenario 5 ###
-
 <p align="center">
-<img src= "[animations/Scenario5_Start.gif](http://www.youtube.com/watch?v=MGoWMPEWPmw"")"width="400"/>
-<img src="[![PID controlled Scenario 5](animations/Scenario5_Finish.gif)](http://www.youtube.com/watch?v=sT3jDKye_wA"")" width="400"/>
-<p/>
-
+<img src="animations/Scenario5_Start.gif" alt="[](http://www.youtube.com/watch?v=MGoWMPEWPmw)" width="300"/>
+<img src="animations/Scenario5_Finish.gif" alt="[](http://www.youtube.com/watch?v=sT3jDKye_wA)" width="300"/>
+</p/>
 
 ### Follow the leader  ###
 
-[finish]()
+<p align="center">
+<img src="animations/Scenario5_Start.gif" width="300"/>
 
 
 ## Authors ##
