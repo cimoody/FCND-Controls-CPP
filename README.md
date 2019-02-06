@@ -5,7 +5,7 @@
 This is the readme for the completed C++ simulation project on controlling a quadcopter using a PID (proportional integral derivative) controller. This controller is ideal for a real world quadcopter or flying car as it continously calculates the error between the expected (ideal) measurement and the actual measurements.
 
 
-The correct code is located in [cimoody/FCND-Controls-CPP/src/QuadControl.cpp](https://github.com/cimoody/FCND-Controls-CPP/blob/master/src/QuadControl.cpp) and was written using MacOS 10.14.2 and Xcode version 10.1 (10B61). Framework for PID controllers and parameters was provided in documentation given by [S. Lupashin from Fotokite](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Double_Integrator_Control__Cascaded_P_Controller_Gains_vs_Damping_Ratio.pdf) on the ratio of the inner and outer gains for a cascaded proportional controller, and by [A. Schoelligg et al](https://github.com/cimoody/FCND-Controls-CPP/blob/master/schoellig-acc12.pdf) on feed foward parameter identification in PID controllers. Parameters for the PID controller were tuned using trail and error based 5 scenarios presented in the instructional [README](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md) and explained below.
+The correct code is located in [cimoody/FCND-Controls-CPP/src/QuadControl.cpp](https://github.com/cimoody/FCND-Controls-CPP/blob/master/src/QuadControl.cpp) and was written using MacOS 10.14.2 and Xcode version 10.1 (10B61). Framework for PID controllers and parameters was provided in documentation given by [S. Lupashin from Fotokite](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Double_Integrator_Control__Cascaded_P_Controller_Gains_vs_Damping_Ratio.pdf) on the ratio of the inner and outer gains for a cascaded proportional controller, and by [A. Schoelligg et al](https://github.com/cimoody/FCND-Controls-CPP/blob/master/schoellig-acc12.pdf) on feed foward parameter identification in PID controllers. Parameters for the PID controller were tuned using trail and error based on the 5 scenarios presented in the instructional [README](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md) and explained below.
 
 
 To demonstrate the correct implementation of the C++ PID controls, sample videos of the simulator performing the 5 specific tasks ([listed in Cpp_README.md, starting with the mass tuning](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md#testing-it-out)) are included in this write-up.
@@ -88,6 +88,11 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 <img src="animations/Scenario5_Start.gif" alt="[](http://www.youtube.com/watch?v=MGoWMPEWPmw)" width="300"/>
 <img src="animations/Scenario5_Finish.gif" alt="[](http://www.youtube.com/watch?v=sT3jDKye_wA)" width="300"/>
 </p/>
+
+## And for fun, rainbow figure-8's ##
+They didn't crash falling into formation! 
+
+This case would benefit from more precise tuning, but I was happy to get it to the case where they didn't crash.
 
 ### Follow the leader  ###
 
