@@ -31,11 +31,7 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 
 ### Scenario 1 ###
 
-<p align="left">
-<img src="animations/scenario4.gif" width="400"/>
-<p align="right">
-<img src="animations/scenario4.gif" width="400"/>
-</p>
+
 [start](https://youtu.be/rbDtG0ntA88) [finish](https://youtu.be/RwOANE0UdDg)
 
 ### Scenario 2 ###
@@ -48,20 +44,21 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 
 
 ### Scenario 4 ###
-<p align="left">
-<img src="[![Initial Scenario 4](animations/Scenario4.jpg)](http://www.youtube.com/watch?v=TIJI13YTjak)" width="400"/>
-<p align="right">
+<p align="center">
 <img src="
-[![PID Controlled Scenario 4](animations/Scenario4.jpg)](http://www.youtube.com/watch?v=Z690Q5rHcL8)" width="400"/>
+[![Initial Scenario 4](animations/Scenario4.jpg)](http://www.youtube.com/watch?v=TIJI13YTjak) 
+[![PID Controlled Scenario 4](animations/Scenario4.jpg)](http://www.youtube.com/watch?v=Z690Q5rHcL8)
+"/>
 </p/>
 
+[![Initial Scenario 4](animations/Scenario4.jpg)](http://www.youtube.com/watch?v=TIJI13YTjak) 
+[![PID Controlled Scenario 4](animations/Scenario4.jpg)](http://www.youtube.com/watch?v=Z690Q5rHcL8)
 
 ### Scenario 5 ###
 
-<p align="left">
-<img src= "[![Initial Scenario 5](animations/Scenario5.jpg)](http://www.youtube.com/watch?v=MGoWMPEWPmw)"width="400"/>
-<p align="right">
-<img src="[![PID controlled Scenario 5](animations/Scenario5.jpg)](http://www.youtube.com/watch?v=sT3jDKye_wA)" width="400"/>
+<p align="center">
+<img src= "[![Initial Scenario 5](animations/Scenario5.jpg)](http://www.youtube.com/watch?v=MGoWMPEWPmw"")"width="400"/>
+<img src="[![PID controlled Scenario 5](animations/Scenario5.jpg)](http://www.youtube.com/watch?v=sT3jDKye_wA"")" width="400"/>
 <p/>
 
 
