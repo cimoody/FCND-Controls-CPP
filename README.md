@@ -5,21 +5,21 @@
 This is the readme for the completed C++ simulation project on controlling a quadcopter using a PID (proportional integral derivative) controller. This controller is ideal for a real world quadcopter or flying car as it continously calculates the error between the expected (ideal) measurement and the actual measurements.
 
 
-The correct code is located in [cimoody/FCND-Controls-CPP/src/QuadControl.cpp](https://github.com/cimoody/FCND-Controls-CPP/blob/master/src/QuadControl.cpp) with my tuned parameters in [cimoody/FCND-Controls-CPP/config/QuadControlParams.txt](https://github.com/cimoody/FCND-Controls-CPP/blob/master/config/QuadControlParams.txt) and was written using MacOS 10.14.2 and Xcode version 10.1 (10B61). Framework for PID controllers and parameters was provided in documentation given by [S. Lupashin from Fotokite](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Double_Integrator_Control__Cascaded_P_Controller_Gains_vs_Damping_Ratio.pdf) on the ratio of the inner and outer gains for a cascaded proportional controller, and by [A. Schoelligg et al](https://github.com/cimoody/FCND-Controls-CPP/blob/master/schoellig-acc12.pdf) on feed foward parameter identification in PID controllers. Parameters for the PID controller were tuned using trail and error based on the 5 scenarios presented in the instructional [README](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md) and explained below.
+The completed code is located in [cimoody/FCND-Controls-CPP/src/QuadControl.cpp](https://github.com/cimoody/FCND-Controls-CPP/blob/master/src/QuadControl.cpp) with my tuned parameters in [cimoody/FCND-Controls-CPP/config/QuadControlParams.txt](https://github.com/cimoody/FCND-Controls-CPP/blob/master/config/QuadControlParams.txt) and was written using MacOS 10.14.2 and Xcode version 10.1 (10B61). Framework was provided for PID controllers and parameters in documentation given by [S. Lupashin from Fotokite](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Double_Integrator_Control__Cascaded_P_Controller_Gains_vs_Damping_Ratio.pdf) on the ratio of the inner and outer gains for a cascaded proportional controller, and by [A. Schoelligg et al](https://github.com/cimoody/FCND-Controls-CPP/blob/master/schoellig-acc12.pdf) on feed foward parameter identification in PID controllers. Parameters for the PID controller were tuned using trail and error based on the 5 scenarios presented in the instructional [README](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md) and explained below.
 
 
-To demonstrate the correct implementation of the C++ PID controls, sample videos of the simulator performing the 5 specific tasks ([listed in Cpp_README.md, starting with the mass tuning](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md#testing-it-out)) are included in this write-up.
+To demonstrate the C++ implementation of the PID controls, sample videos of the simulator performing the 5 specific tasks ([listed in Cpp_README.md, starting with the mass tuning](https://github.com/cimoody/FCND-Controls-CPP/blob/master/Cpp_README.md#testing-it-out)) are included in this write-up.
 
 
 ## The Tasks ##
 ### The 5 tasks are:
-1. Hovering at correct mass 
+1. Hovering using tuned mass parameter to counter gravitational force in the simulation.
 
 <p align="center">
 <img src="animations/scenario1.gif" width="300"/>
 </p>
 
-2. Stopping an initially spinning quadcopter or drone by correctly implementing the functions controlling individual motor thrust and rotational rates in
+2. Stopping an initially spinning quadcopter or drone by implementing the functions controlling individual motor thrust and rotational rates in
 	- `GenerateMotorCommands()`
 	- `BodyRateControl()`
 	and tuning the proportional parameter for the rotational velocities
@@ -40,7 +40,7 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 <img src="animations/scenario3.gif" width="300"/>
 </p>
 
-4. Relax the controller for non-ideal scenarios such as a drone with an offset center of mass (green), or a heavier than usual mass (red) and achieve the same motion for all three drones as the ideal case (orange) by adding in basic integral control to the `AltitudeControl()` function.
+4. Relaxing the controller for non-ideal scenarios such as a drone with an offset center of mass (green), or a heavier than usual mass (red) and achieve the same motion for all three drones as the ideal case (orange) by adding in basic integral control to the `AltitudeControl()` function.
 
 <p align="center">
 <img src="animations/scenario4.gif" width="300"/>
@@ -68,7 +68,7 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 <img src="animations/Scenario2_Finish.gif" alt="[](http://www.youtube.com/watch?v=MLuDJvOlmaE)" height="300"/>
 </p/>
 
-(**[Scenario 2 before any implementation of PD conrollers](https://youtu.be/OyQ1zFRaxA0) & [Scenario 2 after correct implementation of PD controllers](https://youtu.be/MLuDJvOlmaE)**)
+(**[Scenario 2 before any implementation of PD conrollers](https://youtu.be/OyQ1zFRaxA0) & [Scenario 2 after implementation of PD controllers](https://youtu.be/MLuDJvOlmaE)**)
 
 ### Scenario 3 ###
 <p align="center">
@@ -76,7 +76,7 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 <img src="animations/Scenario3_Finish.gif" alt="[](http://www.youtube.com/watch?v=7OZu-66MHqk)" height="300"/>
 </p/>
 
-(**[Scenario 3 before any implementation of PD conrollers](https://youtu.be/jszk5gQG9bA) & [Scenario 3 after correct implementation of PD controllers](https://youtu.be/7OZu-66MHqk)**)
+(**[Scenario 3 before any implementation of PD conrollers](https://youtu.be/jszk5gQG9bA) & [Scenario 3 after implementation of PD controllers](https://youtu.be/7OZu-66MHqk)**)
 
 
 ### Scenario 4 ###
@@ -85,7 +85,7 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 <img src="animations/Scenario4_Finish.gif" alt="[](http://www.youtube.com/watch?v=Z690Q5rHcL8)" height="300"/>
 </p/>
 
-(**[Scenario 4 before any implementation of PID conrollers](https://youtu.be/TIJI13YTjak) & [Scenario 4 after correct implementation of PID controllers](https://youtu.be/Z690Q5rHcL8)**)
+(**[Scenario 4 before any implementation of PID conrollers](https://youtu.be/TIJI13YTjak) & [Scenario 4 after implementation of PID controllers](https://youtu.be/Z690Q5rHcL8)**)
 
 ### Scenario 5 ###
 <p align="center">
@@ -93,11 +93,11 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 <img src="animations/Scenario5_Finish.gif" alt="[](http://www.youtube.com/watch?v=sT3jDKye_wA)" height="300"/>
 </p/>
 
-(**[Scenario 5 before any implementation of PID conrollers or final tuning](https://youtu.be/MGoWMPEWPmw) & [Scenario 5 after correct implementation of PID controllers & tuning parameters](https://youtu.be/sT3jDKye_wA)**)
+(**[Scenario 5 before any implementation of PID conrollers or final tuning](https://youtu.be/MGoWMPEWPmw) & [Scenario 5 after completed implementation of PID controllers & tuning parameters](https://youtu.be/sT3jDKye_wA)**)
 
 ## And for fun, rainbow figure-8's ##
 ### Follow the leader  ###
-This case would benefit from more precise parameter tuning, but I was happy to get it to the case where all of the drones eventually lined up in formation and none of the drones crashed.
+This scenario would benefit from more precise parameter tuning, but I was happy to get it to get all of the drones eventually lined up in formation without crashing.
 
 
 <p align="center">
