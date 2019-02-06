@@ -56,10 +56,11 @@ To demonstrate the correct implementation of the C++ PID controls, sample videos
 ### Scenario 5 ###
 
 <p align="left">
-<img src="[![Initial Scenario 5](animations.Scenario5.jpg)](http://www.youtube.com/watch?v=MGoWMPEWPmw "")" width="500"/>
+<img src="[![Initial Scenario 5 (animations.Scenario5.jpg)](http://www.youtube.com/watch?v=MGoWMPEWPmw "")" width="500"/>
+
 <p/>
 <p align="left">
-<img src="[![PID controlled Scenario 5](animations.Scenario5.jpg)](http://www.youtube.com/watch?v=sT3jDKye_wA "PID controlled Scenario 5")" width="500"/>
+<img src="[![PID controlled Scenario 5 (animations.Scenario5.jpg)](http://www.youtube.com/watch?v=sT3jDKye_wA "PID controlled Scenario 5")" width="500"/>
 <p/>
 
 
